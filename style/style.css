@@ -1,0 +1,149 @@
+
+  .text{
+    display:flex;
+  }
+  .emojis {
+    margin-left: 200px;
+}
+.words {
+    width: 33%;
+    margin-left: 59px;
+}
+.smaller-blocks {
+     display: block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 17px;
+    background-color: #244AC2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px; 
+    float: left;
+    display: inline;
+    margin: 10px;
+    width: 16.6666666%;
+    padding: 0 12px;
+}
+/* .home-ctas {
+    padding: 0 20px;
+    margin-bottom: 110px;
+}
+.home-ctas .inner {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.home-ctas .inside .cta-blocks {
+    margin: 0 -12px 48px;
+    padding: 0;
+    display: block;
+    height: 200px;
+}
+.home-ctas .inside .cta-blocks li a span {
+    font-size: 32px;
+    line-height: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.home-ctas .inside .cta-blocks li a {
+    display: flex;
+    height: 100%;
+    background-color: #061C2C;
+    position: relative;
+    padding: 98px 0 0 32px;
+    background-image: url(images/asset2.svg);
+    background-repeat: no-repeat;
+    background-position: top 31px left 32px;
+    color: #fff;
+    text-decoration: none;
+}  */
+
+
+.blue-block{
+    background-color: #061C2C;
+    display: flex;
+    color:white;
+    text-decoration: none;
+    margin: 5px;    
+    width: 33.33333%;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.block{
+    display:flex;
+}
+.small{
+    display:flex;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.black-banner {
+    background-color: #000;
+    height: 50px;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.next.arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
