@@ -2,6 +2,7 @@ $(document).ready(function () {
     let currentSlide = 0;
     const slides = $('.slide');
     let dotsContainer = $('.dots-container');
+    let dots;
 
     function showSlide(index) {
         currentSlide = (index + slides.length) % slides.length;
@@ -22,7 +23,7 @@ $(document).ready(function () {
         dotsContainer.append('<div class="dot"></div>');
     }
 
-    let dots = $('.dots-container .dot');
+    dots = $('.dots-container .dot'); // Move dots assignment inside the document ready
 
     dotsContainer.on('click', '.dot', function () {
         const dotIndex = $(this).index();
@@ -31,3 +32,13 @@ $(document).ready(function () {
 
     showSlide(currentSlide);
 });
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+

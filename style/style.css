@@ -1,10 +1,6 @@
-
- 
-  .emojis {
+ .emojis {
     margin-left: 200px;
 }
- 
-
 .next-round{
     text-decoration:none;
     color:blue;
@@ -18,6 +14,10 @@ body {
 .black-banner {
     background-color: #000;
     height: 50px;
+    width: 200px;
+    position: absolute;
+    top: 46.6%;
+    right: 60px;
 }
 
 .slider-container {
@@ -30,6 +30,8 @@ body {
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width:100%;
+    
 }
 
 .slide {
@@ -42,24 +44,17 @@ img {
     display: block;
 }
 
-/* .next.arrow {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background-color: #333;
-    border-radius: 50%;
-} */
+a.logobutton {
+    margin-left: 76%;
+    margin-top: 32px;
+}
 
 .dots-container {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display:flex;
 }
 
 .dot {
@@ -75,16 +70,15 @@ img {
     background-color: #fff;
 }
 .blue-banner {
-    top:50%;
+    top:54%;
     margin-top: -60px;
+    height:50px;
+    padding:5px;
     position: absolute;
     background-color: #244AC2;
     display: block;
-    height: 63px;
     padding-left: 60px;
     padding-right: 100px;
-    font-size: 25px;
-    font-weight: 600;
     color: #fff;
     margin-left: 46px;
    
@@ -101,19 +95,55 @@ img {
 }
 
 
+
+section {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    padding: 14px 0;
+    margin: 0 7rem;
+}
+
+.navbar a img {
+    height: 70px;
+    margin: 5px 0;
+}
+
 .logo {
-    width:10%;
+    width:100%;
     height:20%;
-    margin-left:10%;
+    margin-left:3%;
+    padding:20px;
 }
 .card-container {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    margin: 2rem 6rem;
+    width: 84.3%;  
+    margin-left: 132px;
 }
 .card {
     width: 30% !important;
+   
+}
+.buttonse{
+    display: block;
+    height: 60px;
+    line-height: 38px;
+    padding: 0 17px;
+    width:41%;
+    background-color: #244AC2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
 }
 .inner-card {
     background-color: #061C2C;
@@ -127,8 +157,16 @@ img {
     margin-bottom: 5%;
 }
 .buttons img {
+    float: right;
     height: 10px !important;
     width: 10px !important;
+    margin-top: 12px;
+}
+.buttonse img {
+    float: right;
+    height: 10px !important;
+    width: 10px !important;
+    margin-top: -24px;
 }
 .buttons-container {
     display:flex;
@@ -148,28 +186,40 @@ img {
     font-weight: 600;
     color: #fff;
 }
+.menu-thingie {
+    height:20%;
+    width:20%;
+}
 .not{
     display:flex;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-bottom: 80px;
 }
 .text{
-    width: 54%;
+    width: 48%;
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 36px;
     font-weight: 300;
     color: #061C2C;
     float: left;
-    margin-left: 155px;
+    margin-left: 178px;
+}
+.images {
+    width: 19%;
+    margin-left: 90px;
 }
 
-
+img .eng {
+  height:500px;
+}
 
 .pagination {
     position: absolute;
     display: block;
+    bottom: 252px;
     right: 215px;
-    bottom: 40px;
+   
     z-index: 10;
     text-align: center;
 }
@@ -178,7 +228,7 @@ img {
     transform: rotate(160deg);
 }
 .pagination span {
-    background-image: url(./images//slider-dots.svg);
+    background-image: url(./images/slider-dots.svg);
     width: 22px;
     height: 22px;
     display: inline-block;
@@ -197,6 +247,81 @@ img {
     background-position: center;
     margin: 0 1px;
 }
+img.eng {
+    height: 500px;
+}
+.inner-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
 
-/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) and (max-width:1020px) {
+    .not {
+        flex-direction: row;
+        justify-content: space-between; /* Add space between text and image */
+        align-items: flex-start; /* Align items to the start */
+    }
 
+    .text {
+        width: 54%;
+        font-size: 24px; 
+        margin-left: 155px; 
+        text-align: left; /* Reset text alignment for larger screens */
+    }
+
+    .images {
+        margin-top: 0; /* Reset margin for larger screens */
+    }
+
+    .pagination {
+        position: absolute; /* Reset position for larger screens */
+        right: 215px; /* Reset right position for larger screens */
+        bottom: 40px; /* Reset bottom position for larger screens */
+        margin-top: 0; /* Reset margin for larger screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        padding: 14px 0;
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 4px 0;
+        margin: 0 2rem;
+    }
+
+    .navbar a img {
+        height: 40px;
+        margin: 1px 0;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .navbar {
+        display: flex;
+        padding: 7px 0;
+        margin: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 2px 0;
+        /* margin: 0; */
+    }
+
+    .navbar a img {
+        height: 25px;
+        margin: 1px 0;
+    }
+
+    svg {
+        height: 25px;
+        margin: 1px 0;
+    }
+}
