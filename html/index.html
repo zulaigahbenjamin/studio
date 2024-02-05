@@ -12,19 +12,21 @@
 </head>
 
 <body>
-    <header>  
+    <header>
         <nav>
-        <div class="navbar">
-            <a href="#" class="logo">
-                <img src="../images//Screenshot 2024-01-30 132437.png">
-            </a>
-            <a href="#" class="logobutton">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                    <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+            <div class="navbar">
+                <a href="#" class="logo">
+                    <img src="../images//Screenshot 2024-01-30 132437.png" class="thing">
+                </a>
+                <a href="#" class="logobutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path
+                            d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                        </path>
                     </svg>
-            </a>
-        </div>
-     </nav>
+                </a>
+            </div>
+        </nav>
     </header>
     <section class="flec">
         <div class="blue-banner">
@@ -35,14 +37,21 @@
         <div class="slider-container">
             <div class="slider">
 
-                <div class="slide"><img src="../images/Creekside-28x118.jpg" alt="image" class="eng"></div>
-                <div class="slide"><img
-                        src="https://i.postimg.cc/dtyfPzYm/depositphotos-625285244-stock-photo-amazing-nature-landscape-lago-carezza.webp"
-                        alt="image" class="eng"></div>
-                <div class="slide"><img src="../images/Creekside-28x118.jpg" alt="image" class="eng"></div>
+                <div class="slider-inner">
+                    <img src="https://i.postimg.cc/FsxqzqFX/travis-leery-0yind-Es-El-I-unsplash.jpg" class="active"
+                        loading="lazy">
+                    <img src="https://i.postimg.cc/RF3GTpzh/travis-leery-NZIUYxg-Hg7w-unsplash.jpg" loading="lazy">
+                    <img src="../images/Creekside-28x118.jpg" alt="image" loading="lazy">
+                </div>
             </div>
-            <div class="next arrow" onclick="changeSlide(1)"></div>
-            <div class="dots-container"></div>
+            <img src="../images/slider-next (1).svg" alt="next" class="next">
+
+            <div class="pagination">
+                <span class="active" rel="1"></span>
+                <span class rel="2"></span>
+                <span class rel="3"></span>
+            </div>
+
         </div>
     </section>
     <section class="not">
@@ -54,11 +63,11 @@
         <div class="images">
             <img src="../images/Screenshot 2024-01-29 151809.png">
         </div>
-        <div class="pagination">
+        <!-- <div class="pagination">
             <span class="active" rel="1"></span>
             <span class rel="2"></span>
             <span class rel="3"></span>
-        </div>
+        </div> -->
     </section>
     <section class="card-container">
         <div class="card">
@@ -69,11 +78,13 @@
             </div>
             <div class="buttons-container">
                 <div class="buttons">
-                    <p>HEDGE FUNDS <img src="../images/__icon__chevron_right___1_-removebg-preview (2).png" alt="image">
+                    <p>HEDGE FUNDS <img src="../images/__icon__chevron_right___1_-removebg-preview (2).png" class="repo"
+                            alt="image">
                     </p>
                 </div>
                 <div class="buttons">
-                    <p>UNIT TRUSTS <img src="../images/__icon__chevron_right___1_-removebg-preview (2).png" alt="image">
+                    <p>UNIT TRUSTS <img src="../images/__icon__chevron_right___1_-removebg-preview (2).png" class="repo"
+                            alt="image">
                     </p>
                 </div>
             </div>
@@ -85,13 +96,13 @@
                     VISIO TEAM</h2>
             </div>
             <div class="buttons-container">
-                <div class="buttonse">
+                <div class="buttons">
                     <p>SEGREGATED MANDATES <img src="../images/__icon__chevron_right___1_-removebg-preview (2).png"
-                            alt="image" class="repo"></p>
+                            alt="image" class="repoo" style="height:200px;"></p>
                 </div>
                 <div class="buttons">
                     <p>AFRICA FUNDS <img src="../images/__icon__chevron_right___1_-removebg-preview (2).png"
-                            alt="image"> </p>
+                            class="repo" alt="image"></p>
                 </div>
             </div>
         </div>
@@ -104,19 +115,15 @@
             <div class="buttons-container">
                 <div class="buttons">
                     <p>Fund Performance<img src="../images/__icon__chevron_right___1_-removebg-preview (2).png"
-                            alt="image"></p>
+                            class="repel" alt="image"></p>
                 </div>
                 <div class="buttons">
                     <p>Risk Management<img src="../images/__icon__chevron_right___1_-removebg-preview (2).png"
-                            alt="image"> </p>
+                            class="repel" alt="image"> </p>
                 </div>
             </div>
         </div>
-
     </section>
-
-
-
 </body>
 
 </html>
